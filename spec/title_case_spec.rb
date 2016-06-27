@@ -17,4 +17,7 @@ describe('String#title_case') do
   it("converts all uppercase entries or mixed case to proper case") do
     expect(("A HAMLET MYSTERY").title_case()).to(eq("A Hamlet Mystery"))
   end
+  it("converts all uppercase entries or mixed case to proper case") do
+    expect(("A HaMLeT MYsteRY").title_case()).to(eq("A Hamlet Mystery"))
+  end
 end
