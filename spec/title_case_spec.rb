@@ -14,4 +14,7 @@ describe('String#title_case') do
   it("capitalizes the first letter of articles, prepositions, or coordinating conjunctions if they are the first word") do
     expect(("a hamlet mystery").title_case()).to(eq("A Hamlet Mystery"))
   end
+  it("converts all uppercase entries to proper case") do
+    expect(("A HAMLET MYSTERY").title_case()).to(eq("A Hamlet Mystery"))
+  end
 end

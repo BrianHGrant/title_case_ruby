@@ -6,6 +6,7 @@ class String
 "as","at","atop","before","behind","below","beneath","beside","between","beyond","by","despite","down","during","for","from","in","inside","into","like","near","of","off","on","onto","out","outside","over","past","regarding","round","since","than","through","throughout","till","to","toward","under","unlike","until","up","upon","with","within","without"]
 
     split_sentence.each do |word|
+      word.downcase!()
       if !check_words.include?(word)
         word.capitalize!()
       end
