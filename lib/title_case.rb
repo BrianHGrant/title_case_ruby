@@ -10,6 +10,7 @@ class String
         word.capitalize!()
       end
     end
+    split_sentence.at(0).capitalize!()
     split_sentence.join(" ")
   end
 end

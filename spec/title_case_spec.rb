@@ -11,4 +11,7 @@ describe('String#title_case') do
   it("does not capitalize the first letter of articles, prepositions, or coordinating conjunctions") do
     expect(("hamlet has a sandwich").title_case()).to(eq("Hamlet Has a Sandwich"))
   end
+  it("capitalizes the first letter of articles, prepositions, or coordinating conjunctions if they are the first word") do
+    expect(("a hamlet mystery").title_case()).to(eq("A Hamlet Mystery"))
+  end
 end
