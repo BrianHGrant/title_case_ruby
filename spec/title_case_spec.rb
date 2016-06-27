@@ -6,6 +6,9 @@ describe('String#title_case') do
     expect(("hamlet").title_case()).to(eq("Hamlet"))
   end
   it("capitalizes the first letter of a multiple word string") do
-    expect(("hamlet has a sandwich").title_case()).to(eq("Hamlet Has A Sandwich"))
+    expect(("hamlet lives").title_case()).to(eq("Hamlet Lives"))
+  end
+  it("does not capitalize the first letter of articles, prepositions, or coordinating conjunctions") do
+    expect(("hamlet has a sandwich").title_case()).to(eq("Hamlet Has a Sandwich"))
   end
 end
